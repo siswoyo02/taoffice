@@ -37,7 +37,7 @@
               font-weight: 8;
             }
 
-            .jam-digital-malasngoding {
+            .jam-digital {
               overflow: hidden;
               float: center;
               width: 100px;
@@ -52,7 +52,7 @@
               background-color: #189fff;
             }
 
-            .jam-digital-malasngoding p {
+            .jam-digital p {
               color: #fff;
               font-size: 16px;
               text-align: center;
@@ -60,7 +60,7 @@
             }
         </style>
 
-        <div class="jam-digital-malasngoding">
+        <div class="jam-digital">
             <div class="kotak">
               <p id="jam"></p>
             </div>

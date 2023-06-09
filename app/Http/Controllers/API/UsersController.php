@@ -15,16 +15,16 @@ class UsersController extends Controller
     {
         $data = User::all();
 
-        if($data){
+        if ($data) {
             return ApiFormatter::createApi(200, 'Success', $data);
-        }else{
+        } else {
             return ApiFormatter::createApi(400, 'Failed');
         }
     }
 
     public function store(Request $request)
     {
-           try {
+        try {
             $validatedData = $request->validate([
                 'name' => 'required',
                 'email' => 'required|email:dns|unique:users',
@@ -33,14 +33,15 @@ class UsersController extends Controller
             $validatedData['password'] = Hash::make($validatedData['password']);
             $users = User::create($validatedData);
             $data = User::where('id', $users->id);
-            
-            if($data){
+
+            if ($data) {
                 return ApiFormatter::createApi(200, 'Success', $data);
-            }else{
+            } else {
                 return ApiFormatter::createApi(400, 'Failed');
             }
-           } catch(Exception $error) {
+        } catch (Exception $error) {
             return ApiFormatter::createApi(400, 'Failed');
-           }
+        }
     }
+
 }

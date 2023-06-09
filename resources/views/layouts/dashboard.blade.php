@@ -10,7 +10,7 @@
     {{-- logo --}}
     <link rel="stylesheet" href="{{ url('adminlte/plugins/fullcalendar/main.css') }}">
 
-    <link rel="shorcut icon" href="{{ url('assets/img/avatar-1.png') }}">
+    <link rel="shorcut icon" href="{{ url('assets/img/rs.png') }}">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="{{ url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') }}">
@@ -105,9 +105,9 @@
     <div class="wrapper">
 
         <!-- Preloader -->
-        <div class="preloader flex-column justify-content-center align-items-center">
-            <img src="{{ url('assets/img/avatar-1.png') }}" alt="Jago Software Logo" height="60" width="60">
-        </div>
+        <!-- <div class="preloader flex-column justify-content-center align-items-center">
+            <img src="{{ url('assets/img/tbn.png') }}" alt="RSUD Tuban" height="60" width="60">
+        </div> -->
 
         @include('partials.topbar')
 

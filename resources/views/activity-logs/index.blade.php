@@ -2,13 +2,7 @@
 @section('isi')
 <div class="container-fluid">
     <div class="card card-outline card-primary">
-        <div class="card-header">
-            <!-- <center>
-                <a href="{{ url('/dokumen/tambah') }}" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah
-                    Dokumen</a>
-            </center> -->
-        </div>
-        <!-- /.card-header -->
+      
         <div class="card-body">
             <h1>Activity Logs</h1>
 

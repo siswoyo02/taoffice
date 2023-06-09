@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Environment (please complete the following information):**
 - AdminLTE Version: [e.g. v3.0.0]
-- Operating System:  [e.g. macOS Catalina]
+- Operating System:  [e.g. Windows 10]
 - Browser (Version): [e.g. Chrome (Latest)]
 
 **Additional context**

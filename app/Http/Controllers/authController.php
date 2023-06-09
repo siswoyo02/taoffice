@@ -59,7 +59,7 @@ class authController extends Controller
             if(auth()->user()->is_admin == "admin") {
                 return redirect()->intended('/dashboard');
             } else {
-                return redirect()->intended('/absen');
+                return redirect()->intended('/dashboard');
             }
         }
 

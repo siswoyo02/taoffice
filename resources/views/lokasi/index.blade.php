@@ -48,6 +48,14 @@
                         </center>
                   </form>
             </div>
+            <div class="d-flex justify-content-center">
+            <form action="{{ url('/my-location') }}" method="get">
+                @csrf
+                <input type="hidden" name="lat" id="lat2">
+                <input type="hidden" name="long" id="long2">
+                <button type="submit" class="btn btn-success">Lihat Lokasi Saya</button>
+            </form>
+            </div>
             <br><br>
         </div>
     </div>

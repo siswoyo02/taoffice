@@ -315,7 +315,7 @@ class karyawanController extends Controller
         $end = new \DateTime($request["tanggal_akhir"]);
         $end = $end->modify('+1 day');
 
-        $interval = new \DateInterval('P1D'); //referensi : https://en.wikipedia.org/wiki/ISO_8601#Durations
+        $interval = new \DateInterval('P1D'); 
         $daterange = new \DatePeriod($begin, $interval ,$end);
 
 
@@ -337,7 +337,7 @@ class karyawanController extends Controller
                 'status_absen' => 'required',
             ]);
 
-            MappingShift::create($validatedData);
+            MappingShift::updateOrcreate($validatedData);
         }
         ActivityLog::create([
             'user_id' => $request->user()->id,

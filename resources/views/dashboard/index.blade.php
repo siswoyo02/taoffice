@@ -1,5 +1,6 @@
 @extends('layouts.dashboard')
 @section('isi')
+@can('admin')
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3 col-sm-6 col-12">
@@ -33,7 +34,7 @@
                     <!-- <span class="info-box-text text-info">Total User</span> -->
                     <span class="font-size-24 font-weight-bold animate__animated animate__bounce"
                         style="color: rgb(254, 153, 0)">
-                        Total Karyawan
+                        User
                     </span>
                     <span class="info-box-number animate__animated animate__fadeInRightBig">
                         <small class="badge badge-warning font-size-16">
@@ -365,15 +366,16 @@
         <!-- /.col -->
     </div>
 </div>
+@endcan
 
 <!-- Activity Logs -->
-<div class="col-md-12">
+<!-- <div class="col-md-12">
     <div class="card card-outline card-primary">
         <div class="card-header">
             <h4 class="card-title">History Aktivitas Terbaru</h4>
         </div>
         <div class="card-body p-0">
-            <!-- THE CALENDAR -->
+            
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
@@ -399,11 +401,10 @@
                 </table>
             </div>
         </div>
-        <!-- /.card-body -->
+        
     </div>
-    <!-- /.card -->
-</div>
-<!-- /.col -->
+    
+</div> -->
 
 <div class="row">
     <div class="col-md-3">
@@ -415,11 +416,11 @@
                 <div class="card-body">
                     <!-- the events -->
                     <div id="external-events">
-                        <div class="external-event bg-success">Lunch</div>
-                        <div class="external-event bg-warning">Go home</div>
-                        <div class="external-event bg-info">Do homework</div>
-                        <div class="external-event bg-primary">Work on UI design</div>
-                        <div class="external-event bg-danger">Sleep tight</div>
+                        <!-- <div class="external-event bg-success"></div> -->
+                        <div class="external-event bg-warning">Meeting</div>
+                        <!-- <div class="external-event bg-info"></div>
+                        <div class="external-event bg-primary"></div> -->
+                        <div class="external-event bg-danger">Libur</div>
                         <div class="checkbox">
                             <label for="drop-remove">
                                 <input type="checkbox" id="drop-remove">

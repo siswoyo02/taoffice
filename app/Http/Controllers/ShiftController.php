@@ -48,7 +48,7 @@ class ShiftController extends Controller
             'jam_keluar' => 'required'
         ]);
 
-        Shift::create($validatedData);
+        Shift::updateOrcreate($validatedData);
         ActivityLog::create([
             'user_id' => Auth::user()->id,
             'activity' => 'create',
